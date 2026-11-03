@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomeTasks · Privacy Policy</title>
+<meta name="description" content="HomeTasks privacy policy in English, Spanish, French, German, Portuguese and Italian.">
+<link rel="alternate" hreflang="en" href="en.html">
+<link rel="alternate" hreflang="es" href="es.html">
+<link rel="alternate" hreflang="fr" href="fr.html">
+<link rel="alternate" hreflang="de" href="de.html">
+<link rel="alternate" hreflang="pt-PT" href="pt.html">
+<link rel="alternate" hreflang="it" href="it.html">
+<script>
+  // Abre la política en el idioma del navegador (o en inglés). Sin JavaScript se ve la lista.
+  (function () {
+    var supported = ["en", "es", "fr", "de", "pt", "it"];
+    var langs = navigator.languages || [navigator.language || "en"];
+    var target = "en";
+    for (var i = 0; i < langs.length; i++) {
+      var code = String(langs[i]).slice(0, 2).toLowerCase();
+      if (supported.indexOf(code) >= 0) { target = code; break; }
+    }
+    location.replace(target + ".html");
+  })();
+</script>
+<style>
+  :root {
+    --bg: #FBF6EC;
+    --card: #FFFFFF;
+    --text: #1F2A2B;
+    --muted: #5F6B6C;
+    --accent: #178087;
+    --strong: #0B5A5E;
+    --gold: #F2BB40;
+    --line: #E8E0CF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0C1B1C;
+      --card: #132A2B;
+      --text: #E6EEEE;
+      --muted: #9DB2B3;
+      --accent: #40C4C7;
+      --strong: #A8E0E1;
+      --line: #23403F;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { text-align: center; margin-bottom: 24px; }
+  .brand {
+    font: 900 44px/1.1 ui-rounded, -apple-system, "SF Pro Rounded", system-ui, sans-serif;
+    letter-spacing: -0.5px;
+    margin: 0;
+  }
+  .brand .home { color: var(--strong); }
+  .brand .tasks { color: var(--gold); }
+  nav {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;
+    margin: 20px 0 8px;
+  }
+  nav a {
+    font: inherit; font-size: 15px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    color: var(--text);
+    text-decoration: none;
+  }
+  nav a[aria-current="page"] {
+    background: var(--accent); border-color: var(--accent); color: #fff;
+  }
+  article {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 8px 24px 24px;
+    margin-bottom: 24px;
+  }
+  h1 { color: var(--strong); font-size: 28px; line-height: 1.25; margin: 20px 0 4px; hyphens: auto; overflow-wrap: break-word; }
+  h2 { color: var(--strong); font-size: 19px; margin: 28px 0 6px; }
+  .date { color: var(--muted); font-size: 15px; margin: 0 0 16px; }
+  .summary {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin: 16px 0;
+  }
+  p, li { margin: 6px 0; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  footer { text-align: center; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand"><span class="home">Home</span><span class="tasks">Tasks</span></p>
+  </header>
+  <article>
+    <h1>Privacy Policy</h1>
+    <p>Choose your language · Elige tu idioma · Choisissez votre langue · Sprache wählen · Escolhe o idioma · Scegli la lingua</p>
+    <nav aria-label="Language">
+      <a href="en.html" hreflang="en" lang="en">English</a>
+      <a href="es.html" hreflang="es" lang="es">Español</a>
+      <a href="fr.html" hreflang="fr" lang="fr">Français</a>
+      <a href="de.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="pt.html" hreflang="pt-PT" lang="pt-PT">Português</a>
+      <a href="it.html" hreflang="it" lang="it">Italiano</a>
+    </nav>
+  </article>
+  <footer>© 2026 José Antonio Quiles Follana · HomeTasks</footer>
+</main>
+</body>
+</html>
